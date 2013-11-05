@@ -1,0 +1,114 @@
+AI Logic:
+
+Retrieve Flag
+	Is Flag Captured?
+	Locate (Flag Bearer)
+	-Chase (Flag Bearer)	
+Capture Flag
+	Is Flag At Base?
+	Move In Direction (Flag)
+Chase
+	Enemy Nearby?
+	Locate Enemy
+	Predict Future Position
+	Move In Direction of Position
+	-Combat
+Evade
+	Enemy Behind Me?
+	Locate Enemy
+	Predict Future Position
+	Move In Opposite Direction
+Combat		
+	Enemy In Range?
+	Sufficient Ammo?
+		Fire
+	Insufficient Ammo?
+		Switch
+	
+	
+Combat
+Capture
+Retrieve
+Dodge
+Fire
+Switch
+LockOn
+Scout
+Backup
+Locate
+Ram
+
+
+- Root -
+
+	Protect (Home Flag)
+		Close In On Flag 
+			Close Enough? (Target) (Inverted)
+			Move Towards (Flag)
+		Wait For Enemy To Approach
+		Chase (Target)
+		
+	Capture Flag
+		Capture
+			Is Enemy Flag at base?
+			Move Towards (Flag Base)			
+		Defend (Teammate)
+			Locate Teammate (Holding Flag)
+			Move Towards (Teammate)
+			Follow (At a Distance)
+
+	Retrieve		
+		Is our flag captured?
+		Chase (Flag Bearer/Target)
+			Locate flag bearer (Target)
+			Pinpoint Target
+			*Chase (Flag Bearer)
+		Pick Up Flag
+		Move Towards (Base Target)
+		
+	Visible? (Target)
+		
+	Chase
+		Is Enemy? (Target)
+		Move Towards (Target)
+		*Combat
+		
+	Evade (Repeat)
+		Being Chased?
+		Pinpoint Safe Location
+		Move Towards (Safety/Base)
+		
+	Power Up
+		Locate Health
+		Move To (Health)
+		
+	Combat		
+		Enemy In Range?
+		Attack
+			Sufficient Ammo?
+			Fire
+		Switch Weapon
+		
+	
+	Is our flag captured?
+		locate flag bearer
+		Am I closer to enemy flag than to flag bearer?
+			YES - capture enemy flag
+			NO - Chase enemy flag bearer	
+
+	Am I closer to Enemy flag?
+	Is enemy flag at base?
+	Am I close to enemy flag?
+	Am I being chased? (Inverted)
+	Capture enemy flag
+		
+	
+
+locate nearest enemy
+is flag captured?
+	locate flag bearer
+	chase flag bearer
+	
+	
+
+		
